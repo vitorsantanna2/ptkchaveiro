@@ -18,13 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const cleanNumber = (value) => (value || '').replace(/\D/g, '')
   const formatPhone = (value) => {
     const digits = cleanNumber(value)
-    if (digits.length === 11) {
-      return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`
+    const displayDigits = digits.startsWith('55') && digits.length > 11 ? digits.slice(2) : digits
+
+    if (displayDigits.length === 11) {
+      return `(${displayDigits.slice(0, 2)}) ${displayDigits.slice(2, 7)}-${displayDigits.slice(7)}`
     }
-    if (digits.length === 10) {
-      return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`
+    if (displayDigits.length === 10) {
+      return `(${displayDigits.slice(0, 2)}) ${displayDigits.slice(2, 6)}-${displayDigits.slice(6)}`
     }
-    return digits || '(00) 00000-0000'
+    return displayDigits || '(00) 00000-0000'
   }
 
   const updatePhoneLinks = () => {
