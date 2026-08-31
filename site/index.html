@@ -3,29 +3,275 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>PTK Chaveiro - Mini Site</title>
+    <meta name="description" content="PTK Chaveiro: atendimento 24h, abertura de portas, troca de fechaduras e manutenção de travas para residencial, comercial e automotivo." />
+    <title>PTK Chaveiro | Atendimento 24h</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="card">
-      <div class="avatar">
-        <img id="hero-image" src="assets/ptk-chaveiro.jpg" alt="Imagem PTK Chaveiro" />
-      </div>
+    <header class="topbar">
+      <nav class="container nav">
+        <a href="#top" class="brand" aria-label="PTK Chaveiro">
+          <img src="assets/logo-ptk.png" alt="PTK Chaveiro" class="brand-logo" />
+          <span>PTK Chaveiro</span>
+        </a>
 
-      <section class="info">
-        <h1>PTK Chaveiro</h1>
-        <p class="tagline">Soluções rápidas em chaves e travas — atendimento 24h</p>
+        <div class="nav-links">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </div>
 
-        <div class="contacts">
-          <a id="call-btn" class="contact-btn" href="#">Ligar</a>
-          <a id="whatsapp-btn" class="contact-btn" href="#">WhatsApp</a>
+        <a id="mobile-call-btn" class="nav-cta" href="#contato">Falar agora</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Atendimento rápido e confiável</p>
+            <h1>Seu chaveiro de confiança quando a urgência bate à porta.</h1>
+            <p class="lead">
+              Abertura de portas, troca de fechaduras, manutenção de travas e suporte
+              residencial, comercial e automotivo com atendimento ágil e discreto.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contato">Solicitar orçamento</a>
+              <a class="btn btn-secondary" href="#servicos">Ver serviços</a>
+            </div>
+
+            <ul class="highlights" aria-label="Principais diferenciais">
+              <li>Atendimento 24h</li>
+              <li>Resposta rápida</li>
+              <li>Profissional experiente</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="image-frame logo-frame">
+              <img id="hero-image" src="assets/logo-ptk.png" alt="Logo PTK Chaveiro" />
+            </div>
+
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Disponível para urgências
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer class="meta">
-        <small>Imagem usada para demonstração — substitua `assets/ptk-chaveiro.jpg` pelo arquivo real.</small>
-      </footer>
+      <section class="stats container" aria-label="Números do serviço">
+        <div class="stat">
+          <strong>24h</strong>
+          <span>Atendimento</span>
+        </div>
+        <div class="stat">
+          <strong>+10</strong>
+          <span>Anos de experiência</span>
+        </div>
+        <div class="stat">
+          <strong>Rápido</strong>
+          <span>Resposta imediata</span>
+        </div>
+        <div class="stat">
+          <strong>Confiança</strong>
+          <span>Serviço discreto</span>
+        </div>
+      </section>
+
+      <section id="servicos" class="container section">
+        <div class="section-header">
+          <p class="eyebrow">Serviços</p>
+          <h2>Solucões práticas para sua segurança</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="icon">🔑</div>
+            <h3>Abertura de portas</h3>
+            <p>Atendimento emergencial para residências, empresas e veículos sem danificar a estrutura.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🛡️</div>
+            <h3>Troca de fechaduras</h3>
+            <p>Instalação de fechaduras e sistemas mais seguros para maior proteção do seu imóvel.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🧰</div>
+            <h3>Manutenção de travas</h3>
+            <p>Reparo de travas, mecanismos e peças de alta rotatividade com solução eficiente.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Comercial e residencial</h3>
+            <p>Suporte para condomínios, empresa, lojas e casas com atendimento ágil e personalizado.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process container section">
+        <div class="section-header narrow">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Simples, rápido e sem complicação</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <h3>Solicite o atendimento</h3>
+            <p>Entre em contato por telefone ou WhatsApp e explique a sua necessidade.</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <h3>Diagnóstico rápido</h3>
+            <p>O profissional avalia a situação e indica a melhor solução para o caso.</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <h3>Execução segura</h3>
+            <p>Conserto, troca ou abertura com eficiência, qualidade e compromisso.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="about">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">Sobre</p>
+            <h2>Segurança e atendimento que respeita sua rotina</h2>
+            <p>
+              O PTK Chaveiro trabalha com soluções práticas para quem precisa de agilidade,
+              respeito e segurança no momento certo. Nosso atendimento é pensado para resolver problemas
+              com rapidez sem abrir mão da qualidade do serviço.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <span>✓</span>
+                <div>
+                  <h3>Profissionalismo</h3>
+                  <p>Atendimento cuidadoso e com foco na experiência do cliente.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <span>✓</span>
+                <div>
+                  <h3>Agilidade</h3>
+                  <p>Resposta rápida para situações de urgência e emergência.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <span>✓</span>
+                <div>
+                  <h3>Compromisso</h3>
+                  <p>Trabalho bem executado com foco em solução duradoura.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-panel">
+            <h3>Atendimento</h3>
+            <ul>
+              <li>Residencial</li>
+              <li>Comercial</li>
+              <li>Automotivo</li>
+              <li>Emergência 24h</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="depoimentos" class="container section">
+        <div class="section-header">
+          <p class="eyebrow">Avaliações</p>
+          <h2>Quem já contratou aprova</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <blockquote>
+            "Atendimento muito rápido e resolveu nossa emergência em minutos. Profissional e confiável."
+            <footer>— Cliente residencial</footer>
+          </blockquote>
+          <blockquote>
+            "Excelente para empresa. Fechaduras trocadas com qualidade e o suporte foi impecável."
+            <footer>— Gestão comercial</footer>
+          </blockquote>
+          <blockquote>
+            "Recomendaria para qualquer situação de urgência. Simpatia e rapidez no atendimento."
+            <footer>— Cliente automotivo</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <div class="container contact-grid">
+          <div class="contact-panel">
+            <p class="eyebrow">Contato</p>
+            <h2>Fale com o PTK Chaveiro</h2>
+            <p>Precisa de ajuda urgente ou deseja um orçamento sem compromisso? Estamos prontos para atender.</p>
+
+            <div class="contact-list">
+              <div>
+                <span>Telefone</span>
+                <a id="phone-link" href="#">(21) 99231-2852</a>
+              </div>
+              <div>
+                <span>WhatsApp</span>
+                <a id="whatsapp-link" href="#">Mensagem direta</a>
+              </div>
+              <div>
+                <span>Endereço</span>
+                <p>Rua Luiz Beltrão, 370 - Vila Valqueire, Rio de Janeiro</p>
+              </div>
+              <div>
+                <span>Horário</span>
+                <p>Atendimento 24 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" placeholder="Seu nome" required />
+            </div>
+
+            <div class="form-row">
+              <label for="service">Serviço</label>
+              <select id="service" name="service">
+                <option value="Abertura de porta">Abertura de porta</option>
+                <option value="Troca de fechadura">Troca de fechadura</option>
+                <option value="Manutenção de trava">Manutenção de trava</option>
+                <option value="Atendimento comercial">Atendimento comercial</option>
+                <option value="Outros">Outros</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Descreva sua necessidade..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Enviar pelo WhatsApp</button>
+            <p class="form-note">Sua mensagem será enviada diretamente para o WhatsApp do PTK Chaveiro.</p>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 PTK Chaveiro — Segurança, rapidez e confiança.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
